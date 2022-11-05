@@ -1,0 +1,88 @@
+* { padding: 0; margin: 0; }
+
+html, body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Tahoma", "MS Sans Serif" ;
+    font-size: 12px;
+}
+.title-bar{
+    height: 33px;
+    width: 100%;
+    line-height: 33px;
+    color: white;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #0c5ace;
+    box-shadow: inset 0px 1px 1px #2675E6, inset 0px 1px 1px #1F5FD1, inset 0px 3px 6px #5CA5F9, inset 0px -3px 12px #5CA5F9;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.content-panel{
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-left: 4px solid #3673de;
+    border-right: 4px solid #3673de;
+    border-bottom: 4px solid #3673de;
+}
+
+.tool-bar{
+    flex-shrink: 0;
+    height: 46px;
+    border-bottom:1px solid #d8d6c9;
+    background: #edead7;
+}
+
+.address-bar{
+    flex-shrink: 0;
+    height: 26px;
+    display: flex;
+    border-top: 1px solid #faf9f4;
+    background: #edead7;
+}
+
+.address{
+    margin-left: 20px;
+    width: 100%;
+}
+
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.left{
+    width: 200px;
+    border: 1px solid #edead7;
+    background:#5c7cea;
+}
+
+.right{
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+#list{
+    margin-top: 1px;
+}
+#list>li{
+    display: flex;
+    font-size: 13px;
+    /* background-color: #0078d7; */
+    /* color: white; */
+    margin-bottom: 2px;
+}
+#list>li>.icon{
+    margin-right: 5px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-image: url(./icons/pdf.ico);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

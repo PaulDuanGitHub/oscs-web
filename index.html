@@ -1,3 +1,8 @@
+<!-- <bodyy onload="update()">
+    <h1>OSCS</h1>
+    <button onclick="update()">Update</button><span>Last Update: <span id="update-time"></span></span>
+    <ul id="list"></ul>
+</bodyy> -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,9 +14,26 @@
     <script src="app.js"></script>
     <!-- <link rel='shortcut icon' href="./img/icon.ico"> -->
 </head>
-<body>
-    <h1>OSCS</h1>
-    <button onclick="update()">Update</button>
-    <ul id="list"></ul>
+<body onload="update()">
+    <div class="title-bar">
+        OSCS
+    </div>
+    <div class="content-panel">
+        <div class="tool-bar">
+            Download View
+        </div>
+        <div class="address-bar">
+            Address
+            <input readonly value="https://github.com/err53/oscs/releases/tag/latest" class="address"/>
+        </div>
+        <div class="content">
+            <div class="left">
+            </div>
+            <div class="right">
+                <ul id="list">
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
