@@ -2772,7 +2772,10 @@ function webViewerInitialized() {
   let file;
   const queryString = document.location.search.substring(1);
   const params = (0, _ui_utils.parseQueryString)(queryString);
-  file = params.get("file") ?? _app_options.AppOptions.get("defaultUrl");
+  // Modify here
+  var fileName = params.get("file") ?? _app_options.AppOptions.get("defaultUrl");
+  var fileURL = `http://127.0.0.1:9000/getPDF?file=${fileName}`;
+  file = fileURL;
   validateFileURL(file);
   const fileInput = appConfig.openFileInput;
   fileInput.value = null;
