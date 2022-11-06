@@ -3,7 +3,7 @@ async function update() {
     var requestOptions = {
         method: 'GET'
     };
-    fetch("http://127.0.0.1:9000/getReleases", requestOptions)
+    fetch("http://34.130.121.26:8080/getReleases", requestOptions)
     .then(res => res.json().then(
         data => {
             console.log(data);
