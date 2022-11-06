@@ -12055,7 +12055,7 @@ class BasePreferences {
     "pageColorsBackground": "Canvas",
     "pageColorsForeground": "CanvasText",
     "pdfBugEnabled": false,
-    "sidebarViewOnLoad": -1,
+    "sidebarViewOnLoad": 0,
     "scrollModeOnLoad": -1,
     "spreadModeOnLoad": -1,
     "textLayerMode": 1,
