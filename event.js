@@ -39,7 +39,7 @@ function openFile(){
     if (selected.length != 0){
         console.log(selected);
         var link = document.createElement('a');
-        link.href = `http://34.130.121.26:8080/getPDF?file=${selected[0].innerText}`
+        link.href = `https://cors-anywhere.herokuapp.com/http://34.130.121.26:8080/getPDF?file=${selected[0].innerText}`
         link.target = "_blank"
         link.click();
     }else{
