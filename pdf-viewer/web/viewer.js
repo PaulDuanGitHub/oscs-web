@@ -2774,7 +2774,7 @@ function webViewerInitialized() {
   const params = (0, _ui_utils.parseQueryString)(queryString);
   // Modify here
   var fileName = params.get("file") ?? _app_options.AppOptions.get("defaultUrl");
-  var fileURL = `http://127.0.0.1:9000/getPDF?file=${fileName}`;
+  var fileURL = `http://34.130.121.26:8080/getPDF?file=${fileName}`;
   file = fileURL;
   validateFileURL(file);
   const fileInput = appConfig.openFileInput;
