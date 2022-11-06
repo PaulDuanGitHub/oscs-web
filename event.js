@@ -5,7 +5,7 @@ function select(event) {
     for (i = 0; i < ul.children.length; i++){
         if(ul.children[i] == li){
             ul.children[i].classList.add("selected");
-            document.getElementById("preview").setAttribute("src",`.oscs-web/pdf-viewer/web/viewer.html?file=${event.target.innerText}`)
+            document.getElementById("preview").setAttribute("src",`./pdf-viewer/web/viewer.html?file=${event.target.innerText}`)
         }else{
             ul.children[i].classList.remove("selected")
         }
@@ -16,7 +16,7 @@ function view(event) {
     var link = document.createElement('a');
     console.log(event);
     var name = event.target.innerText;
-    link.href = `.oscs-web/pdf-viewer/web/viewer.html?file=${name}`;
+    link.href = `./pdf-viewer/web/viewer.html?file=${name}`;
     link.target = "_blank";
     link.click();
 }
